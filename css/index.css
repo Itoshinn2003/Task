@@ -1,0 +1,131 @@
+body{
+    width:100%;
+    font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+}
+
+header{
+    
+    width:94%;
+    margin: auto;
+    padding:30px 0;
+    display:flex;
+    justify-content:space-between;
+    background-color:white;
+}
+input[type="checkbox"]{
+    position:absolute;
+    left:-100px;
+}
+.btn{
+    width:70px;
+    height:70px;
+    background-color:rgb(255, 255, 255);
+    text-align:center;
+    line-height:12px;
+    padding-top:10px;
+}
+.btn span{
+    display: inline-block;
+    width:50%;
+    height:5px;
+    border-radius:2.5px;
+    background-color:black; 
+}
+.first-view{
+    background-image: url(../images/hintersee-gbda4ea427_1280.jpg);
+    background-size:cover;
+    height:80vh;
+}
+.About , .Display , .Map{
+    width:94%;
+    margin:0 auto; 
+}
+.box {
+    display:flex;  
+}
+.box-l {
+    width:50%;
+} 
+.box-r{
+    width:45%;
+}
+h2{
+    font-size:34px;
+    margin:200px 0 80px;
+    border-bottom:1px solid rgb(163, 163, 163);
+}
+h3{
+    font-size:24px;
+    margin-bottom:20px;
+}
+.slick-slide img{
+     margin:0 auto;
+}
+
+.slider{
+    max-width:100%;
+}
+.box-r p{
+    padding-bottom:20px;
+    margin-bottom:20px;
+    border-bottom:1px solid rgb(207, 206, 206);
+}
+aside{
+    position:absolute;
+    top:0;
+    left:-200px;
+    height:100%;
+    background-color:rgb(172, 168, 163);
+    width:200px;
+    transition:all 0.2s;
+
+}
+aside li{
+    font-size:22px;
+}
+input[type="checkbox"]:checked ~ aside{
+    left:0px;
+}
+.fix{
+    width:100%;
+    height:100%;
+    position:fixed;
+}
+.top-button{
+    position:fixed;
+    right:0;
+    bottom:0;
+    width:80px;
+    height:80px;
+    background-color:rgb(172, 168, 163);
+    text-align:center;
+    line-height:80px;
+}
+.top-button a{
+    color:black;
+    text-decoration:none;
+}
+
+@media(max-width:750px){
+    .box{
+        display:block;
+        text-align:center;
+    }
+    .box-l , .box-r{
+        width:80%;
+        margin:0 auto;
+    }
+    #map{
+        width:100%;
+        height:300px;
+    }
+    .box-r p{
+        color:black;
+    }
+}
+@media(max-width:400px){
+    .first-view{
+        background-image: url(../images/tobias-tullius-OOZIz71dXSQ-unsplash.jpg);
+        height:60vh;
+    }
+}
